@@ -186,7 +186,7 @@ img { max-width: 100%; height: auto; }
 
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -194,6 +194,7 @@ img { max-width: 100%; height: auto; }
 .hero-content {
   text-align: center;
   color: black;
+  padding-top: 100px;
 }
 
 /* big headline */
