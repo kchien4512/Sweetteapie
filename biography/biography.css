@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Arial, sans-serif;
+}
+
+/* The whole top bar */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* left and right edges */
+  padding: 18px 32px;
+}
+
+/* Left logo */
+.logo a {
+  text-decoration: none;
+  color: #111;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.logo-sub {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #666;
+  margin-top: 2px;
+}
+
+/* Center nav */
+.navlinks {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.navlinks a {
+  text-decoration: none;
+  color: #222;
+  font-size: 16px;
+}
+
+.navlinks a.active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+img { max-width: 100%; height: auto; }
+
+@media (max-width: 768px) {
+  .cards { grid-template-columns: 1fr; }
+  .navlinks { flex-direction: column; gap: 12px; }
+}
+
+.page-hero{
+  padding: 56px 60px 22px;
+  background: #fff;            /* screenshot is white */
+  border-top: 1px solid #eee;  /* subtle line like Shopify */
+}
+
+.page-hero h1{
+  margin: 0;
+  font-size: 44px;
+  font-weight: 400;
+  color: #111;
+}
+
+/* Centered hero title for pages like Biography */
+.page-hero-center {
+  text-align: center;
+}
+
+/* BIOGRAPHY PAGE */
+.bio-band {
+  background: #f3f3f3; /* light gray band like screenshot */
+  padding: 70px 0;
+}
+
+.bio-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.bio-card {
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr; /* text wider than photo */
+  min-height: 360px;
+}
+
+/* Left text area */
+.bio-text {
+  padding: 38px 42px;
+  color: #444;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.bio-text p {
+  margin: 0 0 16px;
+}
+
+.bio-link a {
+  color: #444;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Right photo */
+.bio-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .bio-wrap { padding: 0 20px; }
+  .bio-card { grid-template-columns: 1fr; }
+  .bio-photo img { height: auto; }
+}
