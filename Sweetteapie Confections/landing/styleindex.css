@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Arial, sans-serif;
+}
+
+/* The whole top bar */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* left and right edges */
+  padding: 18px 32px;
+}
+
+/* Left logo */
+.logo a {
+  text-decoration: none;
+  color: #111;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.logo-sub {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #666;
+  margin-top: 2px;
+}
+
+/* Center nav */
+.navlinks {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: #222;
+  font-size: 16px;
+}
+
+.navlinks a.active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+img { max-width: 100%; height: auto; }
+
+@media (max-width: 768px) {
+  .hero {
+    height: 42vh;
+    background-position: center;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .hero-btn {
+    padding: 12px 22px;
+    font-size: 13px;
+  }
+}
+.testimonials {
+  padding: 70px 32px;
+}
+
+.testimonials h2 {
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0 0 40px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 18px;
+  max-width: 1200px;  /* keeps it from stretching too wide */
+}
+
+.card {
+  background: #f5f5f5;
+  padding: 36px;
+  min-height: 220px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.about {
+  max-width: 850px;        /* keeps text narrow like screenshot */
+  margin: 120px auto;      /* center + lots of vertical space */
+  padding: 0 24px;
+  text-align: center;
+  color: #555;
+}
+
+/* Title */
+.about-title {
+  font-size: 34px;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* Normal paragraph text */
+.about-text {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 26px;
+}
+
+/* PLEASE NOTE line */
+.notice {
+  margin: 40px 0;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: #444;
+}
+
+/* small elegant bottom lines */
+.tagline {
+  margin-top: 50px;
+  font-style: italic;
+  letter-spacing: 1.5px;
+}
+
+.location {
+  margin-top: 16px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+
+/* Title */
+.about-title {
+  font-size: 34px;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* Normal paragraph text */
+.about-text {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 26px;
+}
+
+/* PLEASE NOTE line */
+.notice {
+  margin: 40px 0;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: #444;
+}
+
+/* small elegant bottom lines */
+.tagline {
+  margin-top: 50px;
+  font-style: italic;
+  letter-spacing: 1.5px;
+}
+
+.location {
+  margin-top: 16px;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+.hero {
+  height: 80vh; /* tall section */
+  background-image: url("nougat.jpg"); /* your image name */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* text container */
+.hero-content {
+  text-align: center;
+  color: black;
+}
+
+/* big headline */
+.hero h1 {
+  font-size: 56px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+/* button */
+.hero-btn {
+  background: black;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  display: inline-block;
+}
+.banner {
+  height: 420px;
+  width: 100%;
+  margin: 80px 0;          /* space above/below like a “break” */
+  position: relative;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* text overlay */
+.banner-content {
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.banner-content h2 {
+  margin: 0 0 16px;
+  font-size: 56px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #3a2f2a; /* chocolatey text */
+}
+
+/* button */
+.banner-btn {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 22px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.banner-dubai {
+  background-image: url("dubai.jpg");
+}
+
+
+.flavors-image {
+  width: 100%;
+  margin: 80px 0; /* spacing above/below */
+  display: flex;
+  justify-content: center;
+}
+
+.flavors-image img {
+  width: 100%;
+  max-width: 1200px; /* keeps it from being huge */
+  height: auto;
+  display: block;
+}
+

@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Arial, sans-serif;
+}
+
+/* The whole top bar */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* left and right edges */
+  padding: 18px 32px;
+}
+
+/* Left logo */
+.logo a {
+  text-decoration: none;
+  color: #111;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.logo-sub {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #666;
+  margin-top: 2px;
+}
+
+/* Center nav */
+.navlinks {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.navlinks a {
+  text-decoration: none;
+  color: #222;
+  font-size: 16px;
+}
+
+.navlinks a.active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+img { max-width: 100%; height: auto; }
+
+@media (max-width: 768px) {
+  .cards { grid-template-columns: 1fr; }
+  .navlinks { flex-direction: column; gap: 12px; }
+}
+
+.page-hero{
+  padding: 56px 60px 22px;
+  background: #fff;            /* screenshot is white */
+  border-top: 1px solid #eee;  /* subtle line like Shopify */
+}
+
+.page-hero h1{
+  margin: 0;
+  font-size: 44px;
+  font-weight: 400;
+  color: #111;
+}
+
+/* Centered hero title for pages like Biography */
+.page-hero-center {
+  text-align: center;
+}
+
+/* FIND US PAGE */
+.find-us {
+  padding: 90px 0 140px;
+  background: #fff;
+}
+
+.find-us-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 60px;
+  text-align: center;
+}
+
+.find-us-text {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  color: #555;
+  margin-bottom: 28px;
+}

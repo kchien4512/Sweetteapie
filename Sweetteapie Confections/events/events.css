@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Arial, sans-serif;
+}
+
+/* The whole top bar */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* left and right edges */
+  padding: 18px 32px;
+}
+
+/* Left logo */
+.logo a {
+  text-decoration: none;
+  color: #111;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.logo-sub {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #666;
+  margin-top: 2px;
+}
+
+/* Center nav */
+.navlinks {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.navlinks a {
+  text-decoration: none;
+  color: #222;
+  font-size: 16px;
+}
+
+.navlinks a.active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+img { max-width: 100%; height: auto; }
+
+@media (max-width: 768px) {
+  .cards { grid-template-columns: 1fr; }
+  .navlinks { flex-direction: column; gap: 12px; }
+}
+
+.page-hero{
+  padding: 56px 60px 22px;
+  background: #fff;            /* screenshot is white */
+  border-top: 1px solid #eee;  /* subtle line like Shopify */
+}
+
+.page-hero h1{
+  margin: 0;
+  font-size: 44px;
+  font-weight: 400;
+  color: #111;
+}
+
+
+/* EVENTS PAGE */
+.events {
+  padding: 40px 60px 90px;
+  background: #fff;
+}
+
+.events-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 90px; /* big spacing between sections like screenshot */
+}
+
+.event-row {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr; /* image bigger than text */
+  gap: 80px;
+  align-items: start;
+}
+
+.event-row.reverse {
+  grid-template-columns: 1fr 1.25fr;
+}
+
+.event-row.reverse .event-media {
+  order: 2; /* puts image on right */
+}
+
+.event-row.reverse .event-info {
+  order: 1; /* text on left */
+}
+
+/* image styling */
+.event-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* text block */
+.event-info {
+  padding-top: 20px; /* pushes text down a bit like screenshot */
+  max-width: 520px;
+}
+
+.event-info h2 {
+  margin: 0 0 18px;
+  font-size: 32px;
+  font-weight: 500;
+  color: #111;
+}
+
+.event-info p {
+  margin: 0 0 12px;
+  font-size: 13px;
+  line-height: 1.9;
+  color: #666;
+}
+
+/* button like screenshot */
+.btn {
+  display: inline-block;
+  margin-top: 22px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 26px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .events { padding: 30px 20px 70px; }
+
+  .event-row,
+  .event-row.reverse {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .event-row.reverse .event-media,
+  .event-row.reverse .event-info {
+    order: initial;
+  }
+
+  .event-info {
+    padding-top: 0;
+    max-width: 100%;
+  }
+}
